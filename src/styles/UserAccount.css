@@ -1,0 +1,241 @@
+.user-account {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.account-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.account-header h1 {
+  color: #63b3ed;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.account-header p {
+  color: #a0aec0;
+  font-size: 1.1rem;
+}
+
+.account-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: #2d3748;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border-left: 4px solid #63b3ed;
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  color: #63b3ed;
+  margin: 0;
+}
+
+.stat-card p {
+  color: #a0aec0;
+  margin: 0.5rem 0 0 0;
+}
+
+.account-info {
+  display: grid;
+  gap: 2rem;
+}
+
+.info-card {
+  background: #1a202c;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  color: #63b3ed;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #2d3748;
+  padding-bottom: 0.5rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #2d3748;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item label {
+  font-weight: 600;
+  color: #a0aec0;
+}
+
+.info-item span {
+  color: #e2e8f0;
+}
+
+.movies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.movie-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  background: #2d3748;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #e2e8f0;
+  transition: background 0.3s ease;
+}
+
+.movie-item:hover {
+  background: #4a5568;
+}
+
+.movie-item img {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.no-items {
+  color: #a0aec0;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user-review {
+  background: #2d3748;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid #63b3ed;
+}
+
+.review-movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.movie-link {
+  text-decoration: none;
+  color: #63b3ed;
+  font-weight: 600;
+}
+
+.movie-link:hover {
+  text-decoration: underline;
+}
+
+.review-stars {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.review-stars .star {
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.review-stars .star.filled {
+  color: #f6e05e;
+}
+
+.review-comment {
+  color: #e2e8f0;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.review-date {
+  color: #a0aec0;
+  font-size: 0.8rem;
+}
+
+.not-logged-in {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.not-logged-in h2 {
+  color: #a0aec0;
+  margin-bottom: 2rem;
+}
+
+.auth-redirect {
+  background: #63b3ed;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.auth-redirect:hover {
+  background: #4299e1;
+}
+
+.preferences, .watch-history {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-account {
+    padding: 1rem;
+  }
+  
+  .account-header h1 {
+    font-size: 2rem;
+  }
+  
+  .account-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+  
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+  
+  .info-card {
+    padding: 1.5rem;
+  }
+  
+  .review-movie {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

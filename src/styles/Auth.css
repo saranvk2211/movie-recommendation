@@ -1,0 +1,80 @@
+/* src/styles/Auth.css */
+.auth-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.auth-form {
+  background: #1a202c;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #63b3ed;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #4a5568;
+  border-radius: 5px;
+  background: #2d3748;
+  color: white;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #63b3ed;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #63b3ed;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.auth-button:hover {
+  background: #4299e1;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #a0aec0;
+}
+
+.auth-link a {
+  color: #63b3ed;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
